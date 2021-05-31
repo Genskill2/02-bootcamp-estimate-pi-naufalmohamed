@@ -10,7 +10,8 @@ def wallis(n):
     for i in range(1, n):
         pi_by_two = (4*i*i)/((4*i*i)-1)
         total = total * pi_by_two
-    return print(total * 2)
+    new = total*2
+    return new
 
 
 def monte_carlo(n):
@@ -22,7 +23,7 @@ def monte_carlo(n):
             inside_circle += 1
 
     pi = 4*(inside_circle/n)
-    return print(pi)
+    return pi
 
 
 class TestWallis(unittest.TestCase):
